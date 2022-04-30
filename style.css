@@ -64,20 +64,16 @@ button.active {
     color: var(--primary-light);
 }
 
+button:hover,input[type='color']:hover {
+    transform: scale(1.05);
+    cursor:pointer;
+}
+
 input[type='color'] {
     -webkit-appearance: none;
     width: 80px;
     height: 80px;
     border: none;
-  }
-  
-  input[type='color']::-webkit-color-swatch-wrapper {
-    padding: 0;
-  }
-
-button:hover,input[type='color']:hover {
-    transform: scale(1.05);
-    cursor:pointer;
 }
 
 input[type='color']::-webkit-color-swatch {
@@ -95,4 +91,3 @@ background-color: var(--primary-light);
     display: flex;
     border: 3px solid black;
 }
-
